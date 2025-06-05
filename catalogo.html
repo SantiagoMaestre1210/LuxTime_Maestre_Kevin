@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relojería de Lujo - Catálogo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Relojería<span>LuxTime</span></div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html" class="active">Catálogo</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="catalog-page">
+        <section class="catalog-hero" style="background-image: url('https://clockcol.com/cdn/shop/collections/Captura_de_pantalla_2025-05-14_111115.png?v=1747239100&width=750')">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Nuestro Catálogo</h1>
+                <p>Descubre nuestra exclusiva colección de relojes artesanales</p>
+            </div>
+        </section>
+        
+        <section class="catalog-filters">
+            <div class="filter-group">
+                <h3>Filtrar por:</h3>
+                <div class="filter-options">
+                    <div class="filter">
+                        <label for="material">Material:</label>
+                        <select id="material">
+                            <option value="all">Todos</option>
+                            <option value="acero">Acero</option>
+                            <option value="oro">Oro</option>
+                            <option value="cuero">Cuero</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <label for="price">Rango de precios:</label>
+                        <select id="price">
+                            <option value="all">Todos</option>
+                            <option value="0-500">$0 - $500</option>
+                            <option value="500-1000">$500 - $1000</option>
+                            <option value="1000-2000">$1000 - $2000</option>
+                            <option value="2000+">$2000+</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="view-options">
+                <span>Vista:</span>
+                <button class="view-btn grid-view active" title="Vista de cuadrícula"><i class="fas fa-th"></i></button>
+                <button class="view-btn list-view" title="Vista de lista"><i class="fas fa-list"></i></button>
+            </div>
+        </section>
+
+        <section class="products-container">
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card" data-material="acero" data-price="1200">
+                    <div class="product-image">
+                        <img src="https://luxtimeinc.com/cdn/shop/products/26331OR.OO.1220OR.01.jpg?v=1667342234" alt="Reloj de acero">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Clásico Elegante</h3>
+                        <p class="price">$1,200.00</p>
+                        <p class="material">Material: Acero</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="product-card" data-material="oro" data-price="2500">
+                    <div class="product-image">
+                        <img src="https://luxtimeinc.com/cdn/shop/products/5711_1R_001_ed3681fc-c236-4112-8283-5781dbd0f87e.jpg?v=1667396968" alt="Reloj de oro">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lujo Dorado</h3>
+                        <p class="price">$2,500.00</p>
+                        <p class="material">Material: Oro</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="product-card" data-material="cuero" data-price="850">
+                    <div class="product-image">
+                        <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7-grid/c_limit,w_320/v1/catalogue/2025/upright-bba-with-shadow/m126518ln-0014" alt="Reloj de cuero">
+                        <span class="availability low-stock">Últimas unidades</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vintage Cuero</h3>
+                        <p class="price">$850.00</p>
+                        <p class="material">Material: Cuero</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 4 -->
+                <div class="product-card" data-material="acero" data-price="1500">
+                    <div class="product-image">
+                        <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7-grid/c_limit,w_320/v1/catalogue/2025/upright-bba-with-shadow/m126334-0014" alt="Reloj de acero">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Moderno Slim</h3>
+                        <p class="price">$1,500.00</p>
+                        <p class="material">Material: Acero</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 5 -->
+                <div class="product-card" data-material="oro" data-price="3200">
+                    <div class="product-image">
+                        <img src="https://luxtimeinc.com/cdn/shop/files/LTI_Richard_Mille_New_Category.jpg?v=1675369301" alt="Reloj de oro">
+                        <span class="availability out-of-stock">Agotado</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Edición Limitada Oro</h3>
+                        <p class="price">$3,200.00</p>
+                        <p class="material">Material: Oro</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 6 -->
+                <div class="product-card" data-material="cuero" data-price="750">
+                    <div class="product-image">
+                        <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7-grid/c_limit,w_320/v1/catalogue/2025/upright-bba-with-shadow/m52508-0006" alt="Reloj de cuero">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Clásico Marrón</h3>
+                        <p class="price">$750.00</p>
+                        <p class="material">Material: Cuero</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 7 -->
+                <div class="product-card" data-material="acero" data-price="1800">
+                    <div class="product-image">
+                        <img src="https://luxtimeinc.com/cdn/shop/products/26331ST.OO.1220ST.02.jpg?v=1667342226" alt="Reloj de acero">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Deportivo Pro</h3>
+                        <p class="price">$1,800.00</p>
+                        <p class="material">Material: Acero</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 8 -->
+                <div class="product-card" data-material="oro" data-price="2800">
+                    <div class="product-image">
+                        <img src="https://www.medusa.jewelry/cdn/shop/products/rolex-president-day-date-36mm-or-blanc-montre-bijoux-medusa-homme-quebec-canada-139_800x.jpg?v=1620954986" alt="Reloj de oro">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Oro Blanco</h3>
+                        <p class="price">$2,800.00</p>
+                        <p class="material">Material: Oro</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 9 -->
+                <div class="product-card" data-material="cuero" data-price="650">
+                    <div class="product-image">
+                        <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7-grid/c_limit,w_320/v1/catalogue/2025/upright-bba-with-shadow/m336239-0002" alt="Reloj de cuero">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Minimalista Negro</h3>
+                        <p class="price">$650.00</p>
+                        <p class="material">Material: Cuero</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 10 -->
+                <div class="product-card" data-material="acero" data-price="950">
+                    <div class="product-image">
+                        <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7-grid/c_limit,w_320/v1/catalogue/2025/upright-bba-with-shadow/m126509-0001" alt="Reloj de acero">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Aviador Clásico</h3>
+                        <p class="price">$950.00</p>
+                        <p class="material">Material: Acero</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 11 -->
+                <div class="product-card" data-material="oro" data-price="4100">
+                    <div class="product-image">
+                        <img src="https://invicta.com.co/cdn/shop/files/886678388547_540x.jpg?v=1734198886" alt="Reloj de oro">
+                        <span class="availability low-stock">Últimas unidades</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Oro Rosa Premium</h3>
+                        <p class="price">$4,100.00</p>
+                        <p class="material">Material: Oro</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 12 -->
+                <div class="product-card" data-material="cuero" data-price="890">
+                    <div class="product-image">
+                        <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7-grid/c_limit,w_320/v1/catalogue/2025/upright-bba-with-shadow/m52506-0002" alt="Reloj de cuero">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Retro Marrón</h3>
+                        <p class="price">$890.00</p>
+                        <p class="material">Material: Cuero</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 13 -->
+                <div class="product-card" data-material="acero" data-price="1350">
+                    <div class="product-image">
+                        <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7-grid/c_limit,w_320/v1/catalogue/2025/upright-bba-with-shadow/m126500ln-0001" alt="Reloj de acero">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ejecutivo Plateado</h3>
+                        <p class="price">$1,350.00</p>
+                        <p class="material">Material: Acero</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 14 -->
+                <div class="product-card" data-material="oro" data-price="3600">
+                    <div class="product-image">
+                        <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7-grid/c_limit,w_320/v1/catalogue/2025/upright-bba-with-shadow/m126333-0010" alt="Reloj de oro">
+                        <span class="availability out-of-stock">Agotado</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Oro Amarillo</h3>
+                        <p class="price">$3,600.00</p>
+                        <p class="material">Material: Oro</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 15 -->
+                <div class="product-card" data-material="cuero" data-price="720">
+                    <div class="product-image">
+                        <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7-grid/c_limit,w_320/v1/catalogue/2025/upright-bba-with-shadow/m126519ln-0006" alt="Reloj de cuero">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Casual Negro</h3>
+                        <p class="price">$720.00</p>
+                        <p class="material">Material: Cuero</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 16 -->
+                <div class="product-card" data-material="acero" data-price="1100">
+                    <div class="product-image">
+                        <img src="https://luxtimeinc.com/cdn/shop/products/26331ST.OO.1220ST.01.jpg?v=1667342228" alt="Reloj de acero">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Moderno Azul</h3>
+                        <p class="price">$1,100.00</p>
+                        <p class="material">Material: Acero</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 17 -->
+                <div class="product-card" data-material="oro" data-price="2900">
+                    <div class="product-image">
+                        <img src="https://luxtimeinc.com/cdn/shop/products/5980_1R_001_1cf9b1c4-cf1b-437f-b157-b5d5d7c57b2e.jpg?v=1667396962" alt="Reloj de oro">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Oro Clásico</h3>
+                        <p class="price">$2,900.00</p>
+                        <p class="material">Material: Oro</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 18 -->
+                <div class="product-card" data-material="cuero" data-price="680">
+                    <div class="product-image">
+                        <img src="https://luxtimeinc.com/cdn/shop/products/26584OR.OO.1220OR.01.jpg?v=1667342214" alt="Reloj de cuero">
+                        <span class="availability low-stock">Últimas unidades</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vintage Café</h3>
+                        <p class="price">$680.00</p>
+                        <p class="material">Material: Cuero</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 19 -->
+                <div class="product-card" data-material="acero" data-price="1250">
+                    <div class="product-image">
+                        <img src="https://luxtimeinc.com/cdn/shop/products/26579CE.OO.1225CE.01.jpg?v=1667342218" alt="Reloj de acero">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Deportivo Negro</h3>
+                        <p class="price">$1,250.00</p>
+                        <p class="material">Material: Acero</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 20 -->
+                <div class="product-card" data-material="oro" data-price="3800">
+                    <div class="product-image">
+                        <img src="https://chapurmx.vtexassets.com/arquivos/ids/373855-1200-1200?v=638527024430870000&width=1200&height=1200&aspect=true" alt="Reloj de oro">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Oro Rosa Deluxe</h3>
+                        <p class="price">$3,800.00</p>
+                        <p class="material">Material: Oro</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vista de lista (oculta inicialmente) -->
+            <div class="products-list" style="display: none;">
+                <!-- Ejemplo de un producto en vista de lista -->
+                <div class="product-list-item" data-material="acero" data-price="1200">
+                    <div class="list-image">
+                        <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7-grid/c_limit,w_320/v1/catalogue/2025/upright-bba-with-shadow/m127336-0001" alt="Reloj de acero">
+                        <span class="availability in-stock">En stock</span>
+                    </div>
+                    <div class="list-info">
+                        <h3>Clásico Elegante</h3>
+                        <p class="description">Reloj de acero inoxidable con esfera negra y correa de acero pulido. Resistente al agua hasta 50m.</p>
+                        <p class="material">Material: Acero</p>
+                    </div>
+                    <div class="list-price">
+                        <p class="price">$1,200.00</p>
+                        <a href="#" class="btn-small">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Más productos en vista de lista... -->
+            </div>
+        </section>
+
+        <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <span>...</span>
+            <button class="page-btn">5</button>
+            <button class="next-btn">Siguiente <i class="fas fa-chevron-right"></i></button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>maestresantiago30.com</p>
+                <p>+57 301 6972855</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horario</h3>
+                <p>Lunes a Viernes: 10:00am - 8:00pm</p>
+                <p>Sábados: 11:00am - 3:00pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/" class="social-icon"><i class="fab fa-X"></i></a>
+            </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Relojería LuxTime. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
